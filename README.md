@@ -1,7 +1,2 @@
 # rasa
-# rasa
-# rasa
-# rasa
-# rasa
-# rasa
-# rasa
+python -m rasa run --enable-api
