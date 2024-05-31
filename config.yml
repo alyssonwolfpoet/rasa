@@ -8,9 +8,13 @@ assistant_id: placeholder_default
 
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-language: en
+language: pt
 
 pipeline:
+  - name: SpacyNLP
+    model: "pt_core_news_sm"
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
