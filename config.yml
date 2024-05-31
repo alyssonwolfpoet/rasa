@@ -8,13 +8,12 @@ assistant_id: 20240531-140541-district-loveseat
 
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-language: pt
+language: "pt"
 
 pipeline:
 - name: SpacyNLP
-  model: "pt_core_news_sm"
+  model: "pt_core_news_md"
 - name: SpacyTokenizer
-- name: SpacyFeaturizer
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
