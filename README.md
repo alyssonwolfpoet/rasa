@@ -13,3 +13,14 @@ python -m rasa run --enable-api
 >source ./venv/bin/activate
 
 >pip install -r requirements.txt
+
+>rasa train
+
+>python -m rasa run --enable-api
+
+acesse :http://localhost:5005/webhooks/rest/webhook
+utilize:
+{
+    "sender": "Alysson",
+    "message": "sad"
+}
