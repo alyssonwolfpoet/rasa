@@ -21,7 +21,7 @@ responses:
   - text: "Isso ajudou você?"
 
   utter_happy:
-  - text: "Isso ajudou você?"
+  - text: "Ótimo, continue!"
 
   utter_goodbye:
   - text: "Tchau"
