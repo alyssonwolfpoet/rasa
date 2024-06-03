@@ -14,20 +14,20 @@ responses:
   - text: "Olá, como vai!"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Aqui está algo para animá-lo:"
     image: "https://imgur.com/vt8SBiE"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Isso ajudou você?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Isso ajudou você?"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Tchau"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Eu sou um bot, desenvolvido pela Rasa."
 
 session_config:
   session_expiration_time: 60
