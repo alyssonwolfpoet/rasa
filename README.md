@@ -26,3 +26,9 @@ utilize:
     "sender": "Alysson",
     "message": "sad"
 }
+
+## comandos Alysson
+
+docker compose build
+
+docker compose up rasa
