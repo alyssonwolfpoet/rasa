@@ -32,3 +32,5 @@ utilize:
 docker compose build
 
 docker compose up rasa
+
+docker system prune --all --force --volumes
