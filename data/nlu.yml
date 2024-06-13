@@ -93,3 +93,9 @@ nlu:
 - intent: hello
   examples: |
     - hello
+    - Hello
+
+- intent: piada
+  examples: |
+    - piada
+    - Piada

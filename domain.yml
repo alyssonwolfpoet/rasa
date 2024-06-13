@@ -9,14 +9,15 @@ intents:
   - mood_unhappy
   - bot_challenge
   - hello
-
+  - piada
+  
 responses:
   utter_greet:
   - text: "Olá, como vai!"
 
   utter_cheer_up:
   - text: "Aqui está algo para animá-lo:"
-    image: "https://imgur.com/vt8SBiE"
+    image: "https://images.ctfassets.net/l3l0sjr15nav/4o6Nicy6NGYBbNXn2L2SUZ/117e2181d436fdd7a6afa5e1a29860fa/gifs_sao_legais.gif"
 
   utter_did_that_help:
   - text: "Isso ajudou você?"
@@ -36,3 +37,4 @@ session_config:
 
 actions:
   - action_hello_world
+  - action_joke

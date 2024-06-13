@@ -13,23 +13,22 @@ attrs==22.1.0
 Babel==2.15.0
 bidict==0.23.1
 blis==0.7.11
-boto3==1.34.116
-botocore==1.34.116
+boto3==1.34.121
+botocore==1.34.121
 CacheControl==0.12.14
 cachetools==5.3.3
 catalogue==2.0.10
-certifi==2024.2.2
+certifi==2024.6.2
 cffi==1.16.0
 charset-normalizer==3.3.2
 click==8.1.7
-cloudpathlib==0.16.0
 cloudpickle==2.2.1
 colorclass==2.2.2
 coloredlogs==15.0.1
 colorhash==1.2.1
 confection==0.1.5
 confluent-kafka==2.4.0
-cryptography==42.0.7
+cryptography==42.0.8
 cycler==0.12.1
 cymem==2.0.8
 dask==2022.10.2
@@ -38,16 +37,16 @@ docopt==0.6.2
 fbmessenger==6.0.0
 fire==0.6.0
 flatbuffers==24.3.25
-fonttools==4.52.4
+fonttools==4.53.0
 frozenlist==1.4.1
-fsspec==2024.5.0
+fsspec==2024.6.0
 future==1.0.0
 gast==0.4.0
-google-auth==2.29.0
+google-auth==2.30.0
 google-auth-oauthlib==1.0.0
 google-pasta==0.2.0
 greenlet==3.0.3
-grpcio==1.64.0
+grpcio==1.64.1
 h11==0.14.0
 h5py==3.11.0
 httptools==0.6.1
@@ -65,7 +64,7 @@ langcodes==3.4.0
 language_data==1.2.0
 libclang==18.1.1
 locket==1.0.0
-marisa-trie==1.1.1
+marisa-trie==1.2.0
 Markdown==3.6
 MarkupSafe==2.1.5
 matplotlib==3.5.3
@@ -90,8 +89,7 @@ preshed==3.0.9
 prompt-toolkit==3.0.28
 protobuf==4.23.3
 psycopg2-binary==2.9.9
-pt-core-news-md @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_md-3.4.0/pt_core_news_md-3.4.0-py3-none-any.whl#sha256=3ca11ef6b65b2bb1114d48aab1adb8cdef2a459d30af53278216a029b84a0cf0
-pt-core-news-sm @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_sm-3.4.0/pt_core_news_sm-3.4.0-py3-none-any.whl#sha256=a3d94f0219fc79d9e820749c4c9c748458ae4b03a3d961a8027b69626df6f109
+pt-core-news-md @ https://github.com/explosion/spacy-models/releases/download/pt_core_news_md-3.4.0/pt_core_news_md-3.4.0-py3-none-any.whl
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
 pycparser==2.22
@@ -159,14 +157,13 @@ tqdm==4.66.4
 twilio==8.2.2
 typer==0.7.0
 typing-utils==0.1.0
-typing_extensions==4.12.0
+typing_extensions==4.12.1
 tzlocal==5.2
 ujson==5.10.0
 urllib3==2.2.1
 uvloop==0.19.0
 wasabi==0.10.1
 wcwidth==0.2.13
-weasel==0.3.4
 webexteamssdk==1.6.1
 websockets==10.4
 Werkzeug==3.0.3

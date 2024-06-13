@@ -32,4 +32,9 @@ stories:
 - story: hello_world
   steps:
   - intent: hello
-  - action: action_hello_world
+  - action: action_hello_world 
+
+- story: joke
+  steps:
+  - intent: piada
+  - action: action_joke 
