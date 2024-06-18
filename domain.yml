@@ -10,7 +10,46 @@ intents:
   - bot_challenge
   - hello
   - piada
+  - travel
+  - inform_origin_country
+  - inform_destiny_country
+  - inform_origin_coin_to_convert
+  - ceares
+
+entities:
+  - origin_country
+  - destiny_country
+  - origin_coin_to_convert
+
+slots:
+  origin_country:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: origin_country
+
+  destiny_country:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: destiny_country
   
+  origin_coin_to_convert:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: origin_coin_to_convert
+
+forms:
+  simple_form:
+    required_slots:
+      - origin_country
+      - destiny_country
+      - origin_coin_to_convert
+      
 responses:
   utter_greet:
   - text: "Olá, como vai!"
@@ -29,8 +68,53 @@ responses:
   - text: "Tchau"
 
   utter_iamabot:
-  - text: "Eu sou um bot, desenvolvido pela Rasa."
+    - text: "Eu sou um bot, desenvolvido pela Rasa."
 
+  utter_ask_origin_country:
+    - text: "Por favor, escolha seu país de origem:"
+      buttons:
+        - title: "Brasil"
+          payload: "/inform_origin_country{\"origin_country\": \"Brasil\"}"
+#        - title: "Equador"
+#          payload: "/inform_origin_country{\"origin_country\": \"Equador\"}"
+#        - title: "Japão"
+#          payload: "/inform_origin_country{\"origin_country\": \"Japão\"}"
+#        - title: "França"
+#          payload: "/inform_origin_country{\"origin_country\": \"França\"}"
+#        - title: "Espanha"
+#          payload: "/inform_origin_country{\"origin_country\": \"Espanha\"}"
+#        - title: "México"
+#          payload: "/inform_origin_country{\"origin_country\": \"México\"}"
+#        - title: "EUA"
+#          payload: "/inform_origin_country{\"origin_country\": \"EUA\"}"
+#        - title: "Portugal"
+#          payload: "/inform_origin_country{\"origin_country\": \"Portugal\"}"
+
+  utter_ask_destiny_country:
+    - text: "Por favor, escolha seu país de destino:"
+      buttons:
+        - title: "Equador"
+          payload: "/inform_destiny_country{\"destiny_country\": \"Equador\"}"
+        - title: "Japão"
+          payload: "/inform_destiny_country{\"destiny_country\": \"Japão\"}"
+        - title: "França"
+          payload: "/inform_destiny_country{\"destiny_country\": \"França\"}"
+        - title: "Espanha"
+          payload: "/inform_destiny_country{\"destiny_country\": \"Espanha\"}"
+        - title: "México"
+          payload: "/inform_destiny_country{\"destiny_country\": \"México\"}"
+        - title: "EUA"
+          payload: "/inform_destiny_country{\"destiny_country\": \"EUA\"}"
+        - title: "Portugal"
+          payload: "/inform_destiny_country{\"destiny_country\": \"Portugal\"}"
+
+  utter_ask_origin_coin_to_convert:
+    - text: "Escreva a quantidade de dinheiro que deseja converter:"
+
+  utter_ask_ceares:
+    - text: "ai dento cara de jumento"
+    - text: "fresque não mah"
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -38,3 +122,5 @@ session_config:
 actions:
   - action_hello_world
   - action_joke
+  - action_travel_info
+

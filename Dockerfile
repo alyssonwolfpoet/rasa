@@ -23,4 +23,5 @@ VOLUME ["/app/data"]
 
 EXPOSE 5005
 RUN rasa train
+CMD rasa train --force --out trained-models
 CMD python -m rasa run --enable-api --endpoints endpoints.yml --credentials credentials.yml --debug
